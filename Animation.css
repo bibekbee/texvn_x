@@ -1,0 +1,247 @@
+
+.box{
+    margin-left: 500px;
+    width: 200px;
+    height: 200px;
+    background: rgba(0,100,225);
+    transition-duration: 1000ms;
+    transition-timing-function:cubic-bezier(0.27,-0.01, 0, 0.93);
+
+}
+
+html{
+    background-color: #eee;
+}
+
+/* header */
+body{ font-family: Georgia, 'Times new roman', Times, serif;
+    font-size:10px;
+    margin:auto;
+    width: 100vw;
+    text-align:center;
+    overflow-x: hidden;
+    max-width: 1200px;
+    background-color: rgb(184, 184, 184);
+
+}
+
+
+ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+
+}
+
+
+header {
+    background: black;
+    padding: 1em;
+    height: 30vh;
+   
+}
+
+nav ul {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+nav li{
+    margin: 0 1rem;
+    color: white;
+    
+
+}
+
+
+
+@media (min-width:860px) {
+   nav ul {
+       justify-content: flex-end;
+   }
+     .rotate {
+       margin: 2rem 0 0 0;
+       font-size: 3rem;
+   }
+
+
+
+   .recent-post {
+       flex-direction: row;
+  
+   }
+
+   .recent-post-info {
+       flex: 2;
+       padding: 1rem;
+   }
+
+   .recent-post-image {
+       flex: 1;
+       border: lightslategray 0.2rem solid;
+    }
+    .recent-post-image img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .move-right{
+        order: 1;
+    }
+
+    .contact-heading  {
+        margin: 0;
+        font-size: 8rem;
+    }
+
+    #contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+
+    }
+
+    #contact .rotate{
+        display: block;
+    }
+
+    header p {
+        font-size: 4rem;
+         margin-top: 90px;
+    }
+}   
+
+header h6{
+    font-size: 2rem;
+    color:white;
+    font-weight: 400;
+}
+
+header p {
+    font-size: 3rem;
+    padding: 0rem 1;
+    border-bottom: 1px solid lightgrey;
+     color: white;
+     margin-top: 90px;
+
+    
+}
+
+.box:hover {
+   
+    background: rgba(225,0,0);
+    transform: rotate(45deg);
+}
+
+/* PROJECT TITLE */
+
+.project-title {
+    font-size: 3rem;
+
+}
+
+.projects {
+    display: flex;
+    flex-direction: column ;
+}
+
+.grid-item {
+    margin-bottom: 1rem;
+   padding: 1rem;
+    background: lightslategray;
+    position: relative;
+}
+
+img .grid-item {
+    width: 100%;
+    height: 100%;
+
+}
+
+.hidden-text {
+    display:none;
+}
+
+/* sudo class*/
+
+.grid-item:hover > .hidden-text {
+    display: block;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    position: absolute;
+    left: 50%;
+    bottom:50%;
+    transform: translate(-50%, 50%);
+
+}
+
+.grid-item:hover img {
+    filter: brightness(0.4);
+    transform: scal(1.01);
+    opacity: 0.95;
+}
+
+
+
+
+
+
+/*
+working on grid layout
+*/
+/*
+#work1 {
+    grid-area: work1
+
+}
+
+#work2 {
+    grid-area: work2    
+}
+
+#work3 {
+    grid-area: work3
+    
+}
+
+*/
+
+
+
+@media (min-width:860px) {
+
+    .projects {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .grid-item {
+        flex-basis: 45%;
+    }
+}
+
+/* this about grid */
+@media (min-width:1000px) {
+    .project{
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 200px 200px 200px;
+        grid-gap: 20px;
+        grid-template-areas:
+        "work1 work2 work3"
+        "work2 work1 work3"
+        "work1 work1 work1"
+
+    }
+} 
