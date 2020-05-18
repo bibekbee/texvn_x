@@ -102,7 +102,7 @@ header h1 {
     flex:2;
     font-size:0.7rem;
     padding-top:30px;
-    marign-left:-100px;
+    marign-left:-10px;
 
 }
 
@@ -110,7 +110,7 @@ header h1 {
     flex:2;
      font-size: 0.5rem;
     text-align:left;
-    marign-left:-100px;
+    marign-left:-10px;
     
      
 }
