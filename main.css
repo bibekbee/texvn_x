@@ -108,6 +108,7 @@ header h1 {
 .aboutside pre{
     flex:2;
      font-size: 0.5rem;
+    text-align:justify;
      
      
      
