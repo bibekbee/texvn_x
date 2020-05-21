@@ -13,6 +13,10 @@ body{ font-family: Georgia, 'Times new roman', Times, serif;
     background-color: rgb(255, 255, 255);
 
 }
+video {
+    max-width: 100%;
+     outline: none;
+}
 img {
     max-width: 100%;
 }
@@ -91,30 +95,35 @@ header h1 {
 
 /* About */
 
-
-.aboutside h1{
-    flex:2;
-    font-size:0.7rem;
-    padding-top:30px;
-
-}
-.aboutside pre{
-    flex:2;
-     font-size: 0.5rem;
-     
-     
-     
+.divheight {
+    height:200px;
 }
 
-.aboutside {
-    display: flex;
-    flex-direction: row;
-     margin: 20px 0 20px 0 ;
+.aboutside {    
+    display: grid;
+    grid-template-columns: auto auto; 
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    padding: 20px;
     
 }
 
-.aboutside img{
-    flex:1;
+.aboutside > h1{
+    font-size:0.7rem;
+
+}
+.aboutside > p{
+
+    
+     font-size: 0.5rem;
+     text-align:left;
+     
+     
+     
+}
+
+.aboutside > img{
+
     max-width: 100%;
     max-height:100%;
    
@@ -168,7 +177,7 @@ header h1 {
     font-size: 2rem;
 }
 
-.recent-post-info{
+.recent-post-info {
     padding: 1.5rem;
 
 }
@@ -177,7 +186,7 @@ header h1 {
     font-size: 1.4rem;
 }
 
-   .recent-post-image {
+.recent-post-image {
        padding:30px;
        margin-right: 10px;
    }
@@ -187,11 +196,6 @@ header h1 {
     font-size:0.5rem;
     text-align: justify;
 }
-
-video {
-    padding-left: 10px;
-    outline: none;
-    }
 
 
 /* Contact Us  Section*/
@@ -205,14 +209,14 @@ video {
     color: white;
 }
 
-.contact-heading {
+.contactheading {
     margin:0;
-    font-size: 5rem;
+    font-size: 3.5rem;
 }
 
 .contact-text {
     font-size: 1.4rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 
 }
 
@@ -239,9 +243,16 @@ video {
 
    .recent-post-info {
        flex: 2;
-       padding: 1rem;
+       padding: 2rem;
 
    }
+
+     .recent-post-info i{
+       padding: 1.5rem;
+       color: lightslategray;
+
+   }
+
 
    .recent-post-image {
        flex: 1;
@@ -254,9 +265,8 @@ video {
         height: 100%;
     }
 
-    .features { 
- 
-    font-size:0.7rem;
+.features { 
+    font-size: 1rem;
     text-align: justify;
 }
 
@@ -264,7 +274,7 @@ video {
         order: 1;
     }
 
-    .contact-heading  {
+    .contactheading {
         margin: 0;
         font-size: 8rem;
     }
@@ -281,22 +291,39 @@ video {
         display: block;
     }
 
+.divheight {
+    height:500px;
+}    
+
+.aboutside {
+    display: grid;
+      grid-template-columns: auto initial; 
+  grid-template-rows: auto;
+
+  grid-gap: 20px;
+  padding: 20px;
+    
+}
     
 .aboutside h1{
     font-size:2rem;
     padding-top:50px;
 
 }
-.aboutside pre{
+.aboutside p{
      font-size:1rem;
-     
+     text-align:left;
 }
 
 .aboutside img{
+    
     width: 100%;
     height:100%;
-    padding:20px 20 20 20;
-   
+ 
+}
+
+.videoid1 {
+    margin-left:20px;
 }
 
 

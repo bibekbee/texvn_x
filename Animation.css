@@ -8,6 +8,12 @@
     transition-timing-function:cubic-bezier(0.27,-0.01, 0, 0.93);
 
 }
+.box:hover {
+   
+    background: rgba(225,0,0);
+    transform: rotate(45deg);
+}
+
 
 html{
     background-color: #eee;
@@ -23,6 +29,9 @@ body{ font-family: Georgia, 'Times new roman', Times, serif;
     max-width: 1200px;
     background-color: rgb(184, 184, 184);
 
+}
+img {
+    max-width: 100%;
 }
 
 
@@ -43,7 +52,7 @@ a{
 header {
     background: black;
     padding: 1em;
-    height: 30vh;
+    height: 33vh;
    
 }
 
@@ -60,6 +69,13 @@ nav li{
     
 
 }
+
+.projectp{
+    font-size: 2rem;
+}
+.projectt{
+     font-size: 1.5rem;
+ }
 
 
 
@@ -118,6 +134,14 @@ nav li{
         font-size: 4rem;
          margin-top: 90px;
     }
+
+    .projectp{
+    font-size: 3rem;
+    }
+   .projects{
+       margin-top:5px;
+   }
+
 }   
 
 header h6{
@@ -136,11 +160,6 @@ header p {
     
 }
 
-.box:hover {
-   
-    background: rgba(225,0,0);
-    transform: rotate(45deg);
-}
 
 /* PROJECT TITLE */
 
@@ -157,7 +176,7 @@ header p {
 .grid-item {
     margin-bottom: 1rem;
    padding: 1rem;
-    background: lightslategray;
+    background: white;
     position: relative;
 }
 
@@ -227,7 +246,7 @@ working on grid layout
     }
 
     .grid-item {
-        flex-basis: 45%;
+        flex-basis: 30%;
     }
 }
 
